@@ -3,9 +3,19 @@
     <div class="text-center">
       <strong class="tracking-wider block">Options</strong>
 
-      <div class="w-full text-left mt-8">
-        <label for="character" class="block">Character</label>
-        <input type="text" id="character" class="w-full" maxlength="1" v-model="character">
+      <div class="w-full text-left mt-8 grid grid-cols-3 gap-4">
+        <div>
+          <label for="edgeCharacter" class="block">Edge-Character</label>
+          <input type="text" id="edgeCharacter" class="w-full" maxlength="1" v-model="edgeCharacter">
+        </div>
+        <div>
+          <label for="centerCharacters" class="block">Center-Character</label>
+          <input type="text" id="centerCharacters" class="w-full" maxlength="1" v-model="centerCharacter">
+        </div>
+        <div>
+          <label for="sideCharacter" class="block">Side-Character</label>
+          <input type="text" id="sideCharacter" class="w-full" maxlength="1" v-model="sideCharacter">
+        </div>
       </div>
 
       <div class="w-full text-left mt-8">
@@ -49,7 +59,10 @@ import {computed, ref, defineComponent} from 'vue'
 
 export default defineComponent({
   setup() {
-    const character = ref('#');
+    const edgeCharacter = ref('#');
+    const sideCharacter = ref('#');
+    const centerCharacter = ref('#');
+
     const length = ref(32);
     const padding = ref(1);
     const content = ref('Example content');
@@ -58,11 +71,11 @@ export default defineComponent({
     const contentTextarea = ref<HTMLTextAreaElement | null>(null);
 
     const fullLine = (l: number) => {
-      return character.value.repeat(l) + "\n";
+      return edgeCharacter.value + centerCharacter.value.repeat(l-2) + edgeCharacter.value + "\n";
     };
 
     const paddingLines = (l: number) => {
-      return (character.value + ' '.repeat(l - 2) + character.value + "\n").repeat(padding.value);
+      return (sideCharacter.value + ' '.repeat(l - 2) + sideCharacter.value + "\n").repeat(padding.value);
     };
 
     const contentLine = (l: number, line: string) => {
@@ -70,7 +83,7 @@ export default defineComponent({
       const spaceLeft = spaces;
       const spaceRight = (spaces % 1 !== 0) ? spaces + 1 : spaces;
 
-      return character.value + ' '.repeat(spaceLeft) + line + ' '.repeat(spaceRight) + character.value + "\n";
+      return sideCharacter.value + ' '.repeat(spaceLeft) + line + ' '.repeat(spaceRight) + sideCharacter.value + "\n";
     }
 
     const result = computed(() => {
@@ -105,7 +118,9 @@ export default defineComponent({
 
     return {
       result,
-      character,
+      edgeCharacter,
+      sideCharacter,
+      centerCharacter,
       length,
       padding,
       content,
