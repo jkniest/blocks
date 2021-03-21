@@ -12,22 +12,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed
 - Packages
 
-## [1.1.2] - 2021-03-15
-### Packages
-- `PHP` Updated "laravel/framework": v8.31.0 -> v8.32.1
-- `PHP` Updated "jkniest/linting": v1.0.0 -> v1.0.1
-
-## [1.1.1] - 2021-03-06
-### Changed
-- Updated minimum php version to 8.0
-
-### Packages
-- `PHP` Updated "beyondcode/laravel-websockets": v1.11.0 -> v1.11.1
-- `PHP` Updated "facade/ignition": v2.5.13 -> v2.5.14
-- `PHP` Updated "laravel/framework": v8.29.0 -> v8.31.0
-- `PHP` Updated "laravel/tinker": v2.6.0 -> v2.6.1
-- `JS` Updated "jquery": v3.5.1 -> v3.6.0
-
 ## [1.1.0] - 2021-02-28
 ### Added
 - Added option to specify edge, center and side characters
