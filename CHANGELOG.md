@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed
 - Packages
 
+## [1.1.1] - 2021-03-21
+### Packages
+- Updated "tailwindcss": v2.0.3 -> v2.0.4
+- Updated "vite": v2.0.5 -> v2.1.2
+
 ## [1.1.0] - 2021-02-28
 ### Added
 - Added option to specify edge, center and side characters
@@ -36,4 +41,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added "vite" (v2.0.5)
 - Added "vue" (v3.0.7)
 
+[1.1.1]: https://github.com/jkniest/blocks/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/jkniest/blocks/compare/1.0.0...1.1.0
