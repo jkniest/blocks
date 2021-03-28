@@ -18,9 +18,15 @@
         </div>
       </div>
 
-      <div class="w-full text-left mt-8">
-        <label for="length" class="block">Length</label>
-        <input type="number" id="length" class="w-full" v-model="length">
+      <div class="w-full text-left grid grid-cols-2 gap-4">
+        <div class="w-full text-left mt-8">
+          <label for="length" class="block">Length</label>
+          <input type="number" id="length" class="w-full" v-model="length">
+        </div>
+        <div class="w-full text-left mt-8">
+          <label for="sideCharacters" class="block">Side Characters</label>
+          <input type="number" id="sideCharacters" class="w-full" v-model="sideCharacters">
+        </div>
       </div>
 
       <div class="w-full text-left mt-8">
@@ -64,6 +70,7 @@ export default defineComponent({
     const centerCharacter = ref('#');
 
     const length = ref(32);
+    const sideCharacters = ref(1);
     const padding = ref(1);
     const content = ref('Example content');
     const copied = ref(false);
@@ -71,19 +78,24 @@ export default defineComponent({
     const contentTextarea = ref<HTMLTextAreaElement | null>(null);
 
     const fullLine = (l: number) => {
-      return edgeCharacter.value + centerCharacter.value.repeat(l-2) + edgeCharacter.value + "\n";
+      return edgeCharacter.value + centerCharacter.value.repeat(l - 2) + edgeCharacter.value + "\n";
     };
 
     const paddingLines = (l: number) => {
-      return (sideCharacter.value + ' '.repeat(l - 2) + sideCharacter.value + "\n").repeat(padding.value);
+      let line = sideCharacter.value.repeat(sideCharacters.value);
+      line += ' '.repeat(l - sideCharacters.value * 2);
+      line += sideCharacter.value.repeat(sideCharacters.value);
+      line += "\n";
+
+      return line.repeat(padding.value);
     };
 
     const contentLine = (l: number, line: string) => {
-      const spaces = Math.max(((l - 2 - line.length) / 2), 0);
+      const spaces = Math.max(((l - (sideCharacters.value * 2) - line.length) / 2), 0);
       const spaceLeft = spaces;
       const spaceRight = (spaces % 1 !== 0) ? spaces + 1 : spaces;
 
-      return sideCharacter.value + ' '.repeat(spaceLeft) + line + ' '.repeat(spaceRight) + sideCharacter.value + "\n";
+      return sideCharacter.value.repeat(sideCharacters.value) + ' '.repeat(spaceLeft) + line + ' '.repeat(spaceRight) + sideCharacter.value.repeat(sideCharacters.value) + "\n";
     }
 
     const result = computed(() => {
@@ -92,7 +104,7 @@ export default defineComponent({
       let maxLength = 0;
       lines.forEach((line) => maxLength = Math.max(maxLength, line.length));
 
-      const l = Math.max(length.value, maxLength + 2);
+      const l = Math.max(length.value, maxLength + sideCharacters.value * 2);
 
       let comment = fullLine(l);
       comment += paddingLines(l);
@@ -122,6 +134,7 @@ export default defineComponent({
       sideCharacter,
       centerCharacter,
       length,
+      sideCharacters,
       padding,
       content,
       copy,
