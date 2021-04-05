@@ -5,16 +5,16 @@
 
       <div class="w-full text-left mt-8 grid grid-cols-3 gap-4">
         <div>
-          <label for="edgeCharacter" class="block">Edge-Character</label>
-          <input type="text" id="edgeCharacter" class="w-full" maxlength="1" v-model="edgeCharacter">
+          <label for="edgeCharacter" class="block">Edge characters</label>
+          <input type="text" id="edgeCharacter" class="w-full" v-model="edgeCharacters">
         </div>
         <div>
-          <label for="centerCharacters" class="block">Center-Character</label>
+          <label for="centerCharacters" class="block">Center character</label>
           <input type="text" id="centerCharacters" class="w-full" maxlength="1" v-model="centerCharacter">
         </div>
         <div>
-          <label for="sideCharacter" class="block">Side-Character</label>
-          <input type="text" id="sideCharacter" class="w-full" maxlength="1" v-model="sideCharacter">
+          <label for="sideCharacter" class="block">Side character</label>
+          <input type="text" id="sideCharacter" class="w-full" v-model="sideCharacters">
         </div>
       </div>
 
@@ -23,20 +23,16 @@
           <label for="length" class="block">Length</label>
           <input type="number" id="length" class="w-full" v-model="length">
         </div>
+
         <div class="w-full text-left mt-8">
-          <label for="sideCharacters" class="block">Side Characters</label>
-          <input type="number" id="sideCharacters" class="w-full" v-model="sideCharacters">
+          <label for="padding" class="block">Padding</label>
+          <input type="number" id="padding" class="w-full" v-model="padding">
         </div>
       </div>
 
       <div class="w-full text-left mt-8">
-        <label for="padding" class="block">Padding</label>
-        <input type="number" id="padding" class="w-full" v-model="padding">
-      </div>
-
-      <div class="w-full text-left mt-8">
         <label for="content" class="block">Content</label>
-        <textarea class="w-full h-20" v-model="content"></textarea>
+        <textarea id="content" class="w-full h-20" v-model="content"></textarea>
       </div>
     </div>
     <div class="text-center flex flex-col">
@@ -65,12 +61,11 @@ import {computed, ref, defineComponent} from 'vue'
 
 export default defineComponent({
   setup() {
-    const edgeCharacter = ref('#');
-    const sideCharacter = ref('#');
+    const edgeCharacters = ref('#');
+    const sideCharacters = ref('||');
     const centerCharacter = ref('#');
 
     const length = ref(32);
-    const sideCharacters = ref(1);
     const padding = ref(1);
     const content = ref('Example content');
     const copied = ref(false);
@@ -78,24 +73,30 @@ export default defineComponent({
     const contentTextarea = ref<HTMLTextAreaElement | null>(null);
 
     const fullLine = (l: number) => {
-      return edgeCharacter.value + centerCharacter.value.repeat(l - 2) + edgeCharacter.value + "\n";
+      let line = edgeCharacters.value;
+      line += centerCharacter.value.repeat(
+          (l - edgeCharacters.value.length * 2)
+      );
+      line += edgeCharacters.value + "\n";
+
+      return line;
     };
 
     const paddingLines = (l: number) => {
-      let line = sideCharacter.value.repeat(sideCharacters.value);
-      line += ' '.repeat(l - sideCharacters.value * 2);
-      line += sideCharacter.value.repeat(sideCharacters.value);
+      let line = sideCharacters.value;
+      line += ' '.repeat(l - sideCharacters.value.length * 2);
+      line += sideCharacters.value;
       line += "\n";
 
       return line.repeat(padding.value);
     };
 
     const contentLine = (l: number, line: string) => {
-      const spaces = Math.max(((l - (sideCharacters.value * 2) - line.length) / 2), 0);
+      const spaces = Math.max(((l - (sideCharacters.value.length * 2) - line.length) / 2), 0);
       const spaceLeft = spaces;
       const spaceRight = (spaces % 1 !== 0) ? spaces + 1 : spaces;
 
-      return sideCharacter.value.repeat(sideCharacters.value) + ' '.repeat(spaceLeft) + line + ' '.repeat(spaceRight) + sideCharacter.value.repeat(sideCharacters.value) + "\n";
+      return sideCharacters.value + ' '.repeat(spaceLeft) + line + ' '.repeat(spaceRight) + sideCharacters.value + "\n";
     }
 
     const result = computed(() => {
@@ -104,7 +105,7 @@ export default defineComponent({
       let maxLength = 0;
       lines.forEach((line) => maxLength = Math.max(maxLength, line.length));
 
-      const l = Math.max(length.value, maxLength + sideCharacters.value * 2);
+      const l = Math.max(length.value, maxLength + sideCharacters.value.length * 2);
 
       let comment = fullLine(l);
       comment += paddingLines(l);
@@ -130,11 +131,10 @@ export default defineComponent({
 
     return {
       result,
-      edgeCharacter,
-      sideCharacter,
+      edgeCharacters,
+      sideCharacters,
       centerCharacter,
       length,
-      sideCharacters,
       padding,
       content,
       copy,
