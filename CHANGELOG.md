@@ -12,6 +12,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed
 - Packages
 
+## [1.3.0] - 2021-04-05
+### Changed
+- Added possibility to enter more than one edge or side character
+
+### Removed
+- Removed explicit option to specify how many side characters should be rendered
+
+### Packages
+- Updated "postcss": v8.2.8 -> v8.2.9
+- Updated "vite": v2.1.3 -> v2.1.5
+- Updated "@vitejs/plugin-vue": v1.2.0 -> v1.2.1
+- Updated "@vue/compiler-sfc": v3.0.9 -> v3.0.11
+- Updated "vue": v3.0.9 -> v3.0.11
+
 ## [1.2.0] - 2021-03-28
 ### Added
 - Added option to specify how many side characters should be shown
@@ -52,6 +66,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added "vite" (v2.0.5)
 - Added "vue" (v3.0.7)
 
+[1.3.0]: https://github.com/jkniest/blocks/compare/1.2.0...1.3.0
 [1.2.0]: https://github.com/jkniest/blocks/compare/1.1.1...1.2.0
 [1.1.1]: https://github.com/jkniest/blocks/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/jkniest/blocks/compare/1.0.0...1.1.0
