@@ -12,6 +12,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed
 - Packages
 
+## Unreleased
+### Packages
+- Updated "@vitejs/plugin-vue": v1.2.1 -> v1.2.2
+- Updated "postcss": v8.2.9 -> v8.2.13
+- Updated "tailwindcss": v2.1.1 -> v2.1.2
+- Updated "vite": v2.1.5 -> v2.2.3
+
 ## [1.3.1] - 2021-04-10
 ### Packages
 - Updated "tailwindcss": v2.0.4 -> v2.1.1
