@@ -14,10 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Packages
-- Updated "@vitejs/plugin-vue": v1.2.1 -> v1.2.2
-- Updated "postcss": v8.2.9 -> v8.2.13
-- Updated "tailwindcss": v2.1.1 -> v2.1.2
-- Updated "vite": v2.1.5 -> v2.2.3
+- Updated "@vitejs/plugin-vue": v1.2.1 -> v1.2.4
+- Updated "postcss": v8.2.9 -> v8.3.5
+- Updated "tailwindcss": v2.1.1 -> v2.2.4
+- Updated "vite": v2.1.5 -> v2.3.8
+- Updated "tailwindcss/forms": v0.3.2 -> v0.3.3
+- Updated "@vue/compiler-sfc": v3.0.11 -> v3.1.4 
+- Updated "autoprefixer": v10.2.5 -> v10.2.6 
+- Updated "typescript": v4.2.4 -> v4.3.5 
 
 ## [1.3.1] - 2021-04-10
 ### Packages
