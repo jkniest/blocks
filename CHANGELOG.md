@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed
 - Packages
 
-## Unreleased
+## [1.3.2] - 2021-09-12
 ### Security
 - Fixed [CVE-2021-23343](https://github.com/advisories/GHSA-hj48-42vr-x3v9)
 
@@ -88,6 +88,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added "vite" (v2.0.5)
 - Added "vue" (v3.0.7)
 
+[1.3.2]: https://github.com/jkniest/blocks/compare/1.3.1...1.3.2
 [1.3.1]: https://github.com/jkniest/blocks/compare/1.3.0...1.3.1
 [1.3.0]: https://github.com/jkniest/blocks/compare/1.2.0...1.3.0
 [1.2.0]: https://github.com/jkniest/blocks/compare/1.1.1...1.2.0
