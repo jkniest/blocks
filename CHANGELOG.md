@@ -12,6 +12,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed
 - Packages
 
+## [1.3.2] - 2021-09-12
+### Security
+- Fixed [CVE-2021-23343](https://github.com/advisories/GHSA-hj48-42vr-x3v9)
+
+### Packages
+- Updated "@vitejs/plugin-vue": v1.2.1 -> v1.2.4
+- Updated "postcss": v8.2.9 -> v8.3.6
+- Updated "tailwindcss": v2.1.1 -> v2.2.15
+- Updated "vite": v2.1.5 -> v2.5.6
+- Updated "tailwindcss/forms": v0.3.2 -> v0.3.3
+- Updated "@vue/compiler-sfc": v3.0.11 -> v3.2.11 
+- Updated "autoprefixer": v10.2.5 -> v10.2.6 
+- Updated "typescript": v4.2.4 -> v4.4.3 
+- Updated "@vitejs/plugin-vue": v1.2.4 -> v1.6.2 
+- Updated "autoprefixer": v10.2.6 -> v10.3.4 
+- Updated "vue": v3.1.4 -> v3.2.11 
+
 ## [1.3.1] - 2021-04-10
 ### Packages
 - Updated "tailwindcss": v2.0.4 -> v2.1.1
@@ -71,6 +88,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added "vite" (v2.0.5)
 - Added "vue" (v3.0.7)
 
+[1.3.2]: https://github.com/jkniest/blocks/compare/1.3.1...1.3.2
 [1.3.1]: https://github.com/jkniest/blocks/compare/1.3.0...1.3.1
 [1.3.0]: https://github.com/jkniest/blocks/compare/1.2.0...1.3.0
 [1.2.0]: https://github.com/jkniest/blocks/compare/1.1.1...1.2.0
