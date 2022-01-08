@@ -19,9 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated "vite": v2.5.6 -> v2.7.10
 - Updated "typescript": v4.4.3 -> v4.5.4
 - Updated "postcss": v8.3.6 -> v8.4.5
-- Updated "autoprefixer": v10.3.4 -> v10.4.1
+- Updated "autoprefixer": v10.3.4 -> v10.4.2
 - Updated "@vitejs/plugin-vue": v1.6.2 -> v2.0.1
-- Updated "tailwindcss": v2.2.15 -> v3.0.9
+- Updated "tailwindcss": v2.2.15 -> v3.0.12
 - Updated "@tailwindcss/forms": v0.3.3 -> v0.4.0
 
 ## [1.3.2] - 2021-09-12
