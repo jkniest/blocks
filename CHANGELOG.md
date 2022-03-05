@@ -16,15 +16,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Packages
 - Updated "@vue/compiler-sfc": v3.2.11 -> v3.2.29
 - Updated "@vue/compiler-sfc": v3.2.11 -> v3.2.31
-- Updated "vite": v2.5.6 -> v2.8.4
+- Updated "vite": v2.5.6 -> v2.8.6
 - Updated "typescript": v4.4.3 -> v4.5.4
 - Updated "postcss": v8.3.6 -> v8.4.7
 - Updated "autoprefixer": v10.3.4 -> v10.4.2
-- Updated "@vitejs/plugin-vue": v1.6.2 -> v2.2.2
+- Updated "@vitejs/plugin-vue": v1.6.2 -> v2.2.4
 - Updated "tailwindcss": v2.2.15 -> v3.0.23
-- Updated "@tailwindcss/forms": v0.3.3 -> v0.4.0
+- Updated "@tailwindcss/forms": v0.3.3 -> v0.5.0
 - Updated "@vue/compiler-sfc": v3.2.26 -> v3.2.28
-- Updated "typescript": v4.5.4 -> v4.5.5
+- Updated "typescript": v4.5.4 -> v4.6.2
 - Updated "vue": v3.2.26 -> v3.2.31
 
 ## [1.3.2] - 2021-09-12
