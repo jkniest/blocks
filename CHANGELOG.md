@@ -14,18 +14,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Packages
-- Updated "@vue/compiler-sfc": v3.2.11 -> v3.2.29
-- Updated "@vue/compiler-sfc": v3.2.11 -> v3.2.31
-- Updated "vite": v2.5.6 -> v2.8.6
+- Updated "@vue/compiler-sfc": v3.2.11 -> v3.2.33
+- Updated "vite": v2.5.6 -> v2.9.8
 - Updated "typescript": v4.4.3 -> v4.6.3
-- Updated "postcss": v8.3.6 -> v8.4.12
-- Updated "autoprefixer": v10.3.4 -> v10.4.4
-- Updated "@vitejs/plugin-vue": v1.6.2 -> v2.2.4
-- Updated "tailwindcss": v2.2.15 -> v3.0.23
-- Updated "@tailwindcss/forms": v0.3.3 -> v0.5.0
+- Updated "postcss": v8.3.6 -> v8.4.13
+- Updated "autoprefixer": v10.3.4 -> v10.4.7
+- Updated "@vitejs/plugin-vue": v1.6.2 -> v2.3.2
+- Updated "tailwindcss": v2.2.15 -> v3.0.24
+- Updated "@tailwindcss/forms": v0.3.3 -> v0.5.1
 - Updated "@vue/compiler-sfc": v3.2.26 -> v3.2.28
-- Updated "typescript": v4.5.4 -> v4.6.2
-- Updated "vue": v3.2.26 -> v3.2.31
+- Updated "typescript": v4.5.4 -> v4.6.4
+- Updated "vue": v3.2.26 -> v3.2.33
 
 ## [1.3.2] - 2021-09-12
 ### Security
