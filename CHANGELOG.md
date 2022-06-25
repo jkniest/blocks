@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated "postcss": v8.3.6 -> v8.4.14
 - Updated "autoprefixer": v10.3.4 -> v10.4.7
 - Updated "@vitejs/plugin-vue": v1.6.2 -> v2.3.3
-- Updated "tailwindcss": v2.2.15 -> v3.1.3
+- Updated "tailwindcss": v2.2.15 -> v3.1.4
 - Updated "@tailwindcss/forms": v0.3.3 -> v0.5.2
 - Updated "@vue/compiler-sfc": v3.2.26 -> v3.2.37
 - Updated "typescript": v4.5.4 -> v4.7.4
