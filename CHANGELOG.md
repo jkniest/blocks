@@ -12,9 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed
 - Packages
 
-## Unreleased
+## [1.4.0] - 2023-04-11
 ### Changed
 - Switched to script setup
+- Switched to pnpm
 
 ### Packages
 - Updated "@vue/compiler-sfc": v3.2.11 -> v3.2.35
@@ -105,6 +106,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added "vite" (v2.0.5)
 - Added "vue" (v3.0.7)
 
+[1.4.0]: https://github.com/jkniest/blocks/compare/1.3.2...1.4.0
 [1.3.2]: https://github.com/jkniest/blocks/compare/1.3.1...1.3.2
 [1.3.1]: https://github.com/jkniest/blocks/compare/1.3.0...1.3.1
 [1.3.0]: https://github.com/jkniest/blocks/compare/1.2.0...1.3.0
