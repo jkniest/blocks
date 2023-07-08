@@ -14,11 +14,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Packages
-- Updated "postcss": v8.4.21 -> v8.4.24
-- Updated "vite": v4.2.1 -> v4.3.9
+- Updated "postcss": v8.4.21 -> v8.4.25
+- Updated "vite": v4.2.1 -> v4.4.2
 - Updated "tailwindcss": v3.3.1 -> v3.3.2
 - Updated "@vitejs/plugin-vue": v4.1.0 -> v4.2.3
-- Updated "typescript": v5.0.4 -> v5.1.3
+- Updated "typescript": v5.0.4 -> v5.1.6
 - Updated "@vue/compiler-sfc": v3.2.47 -> v3.3.4
 - Updated "vue": v3.2.47 -> v3.3.4
 
