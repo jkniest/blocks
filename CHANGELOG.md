@@ -14,8 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Packages
-- Updated "postcss": v8.4.21 -> v8.4.26
-- Updated "vite": v4.2.1 -> v4.4.4
+- Updated "postcss": v8.4.21 -> v8.4.27
+- Updated "vite": v4.2.1 -> v4.4.6
 - Updated "tailwindcss": v3.3.1 -> v3.3.3
 - Updated "@vitejs/plugin-vue": v4.1.0 -> v4.2.3
 - Updated "typescript": v5.0.4 -> v5.1.6
