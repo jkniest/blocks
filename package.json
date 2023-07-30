@@ -16,7 +16,7 @@
     "autoprefixer": "^10.2.5",
     "postcss": "^8.4.27",
     "typescript": "^5.1.6",
-    "vite": "^4.4.6",
+    "vite": "^4.4.7",
     "vue": "^3.3.4"
   }
 }
