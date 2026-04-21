@@ -26,14 +26,14 @@ devDependencies:
     specifier: ^8.5.9
     version: 8.5.9
   typescript:
-    specifier: ^5.9.3
-    version: 5.9.3
+    specifier: ^6.0.3
+    version: 6.0.3
   vite:
     specifier: ^6.4.2
     version: 6.4.2
   vue:
     specifier: ^3.4.15
-    version: 3.4.15(typescript@5.9.3)
+    version: 3.4.15(typescript@6.0.3)
 
 packages:
 
@@ -583,7 +583,7 @@ packages:
     dependencies:
       '@rolldown/pluginutils': 1.0.0-rc.13
       vite: 6.4.2
-      vue: 3.4.15(typescript@5.9.3)
+      vue: 3.4.15(typescript@6.0.3)
     dev: true
 
   /@vue/compiler-core@3.4.15:
@@ -652,7 +652,7 @@ packages:
     dependencies:
       '@vue/compiler-ssr': 3.4.15
       '@vue/shared': 3.4.15
-      vue: 3.4.15(typescript@5.9.3)
+      vue: 3.4.15(typescript@6.0.3)
     dev: true
 
   /@vue/shared@3.4.15:
@@ -1315,8 +1315,8 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: false
 
-  /typescript@5.9.3:
-    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+  /typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
@@ -1386,7 +1386,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vue@3.4.15(typescript@5.9.3):
+  /vue@3.4.15(typescript@6.0.3):
     resolution: {integrity: sha512-jC0GH4KkWLWJOEQjOpkqU1bQsBwf4R1rsFtw5GQJbjHVKWDzO6P0nWWBTmjp1xSemAioDFj1jdaK1qa3DnMQoQ==}
     peerDependencies:
       typescript: '*'
@@ -1399,7 +1399,7 @@ packages:
       '@vue/runtime-dom': 3.4.15
       '@vue/server-renderer': 3.4.15(vue@3.4.15)
       '@vue/shared': 3.4.15
-      typescript: 5.9.3
+      typescript: 6.0.3
     dev: true
 
   /wrappy@1.0.2:
