@@ -15,7 +15,7 @@
     "@vue/compiler-sfc": "^3.4.15",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.5.9",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.3",
     "vite": "^6.4.2",
     "vue": "^3.4.15"
   }
