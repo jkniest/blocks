@@ -14,7 +14,7 @@
     "@vitejs/plugin-vue": "^6.0.6",
     "@vue/compiler-sfc": "^3.4.15",
     "autoprefixer": "^10.4.16",
-    "postcss": "^8.5.9",
+    "postcss": "^8.5.12",
     "typescript": "^5.9.3",
     "vite": "^6.4.2",
     "vue": "^3.4.15"
